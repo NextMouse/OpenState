@@ -37,10 +37,9 @@ class Communications {
     }
 }
 export class Store {
-    private static DEFAULT_NAMESPANCE: string = "__default";
     private namespace: string;
     private phone: Communications;
-    constructor(namespace: string = Store.DEFAULT_NAMESPANCE) {
+    constructor(namespace: string) {
         this.namespace = namespace;
         this.phone = new Communications(this.namespace);
     }
@@ -64,7 +63,7 @@ export class Store {
 }
 
 // defalut state function
-const store = new Store();
+const store = new Store("__default");
 export default store;
 export const useOpenState = store.useOpenState;
 export const callState = store.callState;
