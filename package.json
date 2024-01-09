@@ -24,9 +24,11 @@
   },
   "homepage": "https://github.com/NextMouse/OpenState#readme",
   "dependencies": {
+    "@types/react": ">=3.2.0",
     "react": ">=16.8.0"
   },
   "devDependencies": {
+    "@types/react": ">=3.2.0",
     "react": ">=16.8.0"
   }
 }
