@@ -2,7 +2,11 @@
   "name": "openstate",
   "version": "1.0.0",
   "description": "React Object Communication Tool",
-  "main": "index.js",
+  "main": "Store.ts",
+  "types": "Store.ts",
+  "files": [
+    "Store.ts"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

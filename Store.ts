@@ -36,11 +36,11 @@ class Communications {
         return this.namespace + "_" + name;
     }
 }
-export default class OpenState {
+export class Store {
     private static DEFAULT_NAMESPANCE: string = "__default";
     private namespace: string;
     private phone: Communications;
-    constructor(namespace: string = OpenState.DEFAULT_NAMESPANCE) {
+    constructor(namespace: string = Store.DEFAULT_NAMESPANCE) {
         this.namespace = namespace;
         this.phone = new Communications(this.namespace);
     }
@@ -62,3 +62,9 @@ export default class OpenState {
         }
     }
 }
+
+// defalut state function
+const store = new Store();
+export default store;
+export const useOpenState = store.useOpenState;
+export const callState = store.call;
