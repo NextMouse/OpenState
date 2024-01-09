@@ -26,7 +26,7 @@ useOpenState = <S>(initialState: S | (() => S), name: string): [S, Dispatch<SetS
 - 返回值：变量及Set方法组成的数组
 
 ```JavaScript
-import { useOpenState } from "openstate/Store";
+import { useOpenState } from "react-openstate";
 
 const App: React.FC = () => {
 
@@ -60,7 +60,7 @@ callState = <S>(name: string): Function
 - 返回值：该字段set方法的执行器
 
 ```JavaScript
-import { callState } from "openstate/Store";
+import { callState } from "react-openstate";
 
 const GameSwitchButton: React.FC = () => {
 
@@ -98,6 +98,8 @@ export default GameSwitchButton;
 > 组件默认给出了一个Store实例，实例的namespace="__default"
 
 ```JavaScript
+import { Store } from "react-openstate";
+
 const store = new Store("__default");
 export default store;
 export const useOpenState = store.useOpenState;
