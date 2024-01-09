@@ -1,6 +1,8 @@
 'use strict';
 
-import React, { Dispatch, SetStateAction } from "react";
+import React from "react";
+import { Dispatch, SetStateAction } from "react";
+
 class Contacts<S> {
     private name: string;
     private namespace: string;
