@@ -1,0 +1,5 @@
+.gitattributes
+.gitignore
+.npmrc
+Store.ts
+tsconfig.json

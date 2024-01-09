@@ -2,6 +2,10 @@
 
 一个React对象通信工具类
 
+![Visitor Count](https://profile-counter.glitch.me/NextMouse/count.svg)
+
+![x](https://github-readme-activity-graph.cyclic.app/graph?username=NextMouse&theme=dracula)
+
 ## 安装方法
 
 ```bash
