@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/NextMouse/OpenState/issues"
   },
-  "homepage": "https://github.com/NextMouse/OpenState#readme"
+  "homepage": "https://github.com/NextMouse/OpenState#readme",
+  "dependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "react": ">=16.8.0"
+  }
 }

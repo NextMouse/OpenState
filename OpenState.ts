@@ -1,3 +1,5 @@
+'use strict';
+
 import React, { Dispatch, SetStateAction } from "react";
 class Contacts<S> {
     private name: string;
@@ -34,7 +36,7 @@ class Communications {
         return this.namespace + "_" + name;
     }
 }
-export class OpenState {
+export default class OpenState {
     private static DEFAULT_NAMESPANCE: string = "__default";
     private namespace: string;
     private phone: Communications;
