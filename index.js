@@ -1,2 +1,2 @@
-import './OpenState'
+const OpenState = require('OpenState');
 module.exports = OpenState;
