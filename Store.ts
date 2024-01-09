@@ -49,7 +49,7 @@ export class Store {
         this.phone.set(name, field, setField);
         return [field, setField];
     }
-    public call = <S>(name: string): Function => {
+    public callState = <S>(name: string): Function => {
         const mapValue = this.phone.get(name);
         if (!mapValue) return function () { };
         const contacts: Contacts<S> = mapValue;
@@ -67,4 +67,4 @@ export class Store {
 const store = new Store();
 export default store;
 export const useOpenState = store.useOpenState;
-export const callState = store.call;
+export const callState = store.callState;
