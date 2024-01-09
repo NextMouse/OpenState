@@ -7,11 +7,12 @@ on:
     branches:
         - main
     paths:
-       - 'Store.ts'
-       - 'readme.md'
-       - 'package.json'
-    tags:
-      - '**'
+       - '**.ts'
+    paths-ignore:
+       - '**.md'
+  pull_request:
+    branches:
+        - main
 
 jobs:
   build:
