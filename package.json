@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NextMouse/OpenState.git"
+    "url": "git+https://github.com/NextMouse/React-OpenState.git"
   },
   "keywords": [
     "React",
@@ -25,9 +25,9 @@
     "readme.md"
   ],
   "bugs": {
-    "url": "https://github.com/NextMouse/OpenState/issues"
+    "url": "https://github.com/NextMouse/React-OpenState/issues"
   },
-  "homepage": "https://github.com/NextMouse/OpenState#readme",
+  "homepage": "https://github.com/NextMouse/React-OpenState#readme",
   "dependencies": {
     "react": ">=16.8.0",
     "typescript": ">=3.2.0"
