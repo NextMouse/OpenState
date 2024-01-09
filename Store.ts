@@ -36,11 +36,10 @@ class Communications {
         return this.namespace + "_" + name;
     }
 }
-export default class OpenState {
-    private static DEFAULT_NAMESPANCE: string = "__default";
+export class Store {
     private namespace: string;
     private phone: Communications;
-    constructor(namespace: string = OpenState.DEFAULT_NAMESPANCE) {
+    constructor(namespace: string) {
         this.namespace = namespace;
         this.phone = new Communications(this.namespace);
     }
@@ -49,7 +48,7 @@ export default class OpenState {
         this.phone.set(name, field, setField);
         return [field, setField];
     }
-    public call = <S>(name: string): Function => {
+    public callState = <S>(name: string): Function => {
         const mapValue = this.phone.get(name);
         if (!mapValue) return function () { };
         const contacts: Contacts<S> = mapValue;
@@ -62,3 +61,9 @@ export default class OpenState {
         }
     }
 }
+
+// defalut state function
+const store = new Store("__default");
+export default store;
+export const useOpenState = store.useOpenState;
+export const callState = store.callState;

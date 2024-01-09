@@ -1,10 +1,13 @@
 {
-  "name": "openstate",
+  "name": "react-openstate",
   "version": "1.0.0",
   "description": "React Object Communication Tool",
-  "main": "index.js",
+  "author": "_store",
+  "license": "MIT",
+  "main": "lib/Store.js",
+  "types": "lib/Store.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --outDir lib"
   },
   "repository": {
     "type": "git",
@@ -12,21 +15,25 @@
   },
   "keywords": [
     "React",
-    "State",
+    "useOpenState",
     "useState",
-    "OpenState",
     "openstate"
   ],
-  "author": "next_mouse",
-  "license": "MIT",
+  "files": [
+    "lib",
+    "license",
+    "readme.md"
+  ],
   "bugs": {
     "url": "https://github.com/NextMouse/OpenState/issues"
   },
   "homepage": "https://github.com/NextMouse/OpenState#readme",
   "dependencies": {
-    "react": ">=16.8.0"
+    "react": ">=16.8.0",
+    "typescript": ">=3.2.0"
   },
   "devDependencies": {
-    "react": ">=16.8.0"
+    "react": ">=16.8.0",
+    "typescript": ">=3.2.0"
   }
 }
