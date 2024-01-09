@@ -1,0 +1,26 @@
+{
+  "name": "openstate",
+  "version": "1.0.0",
+  "description": "React Object Communication Tool",
+  "main": "OpenState.tx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NextMouse/OpenState.git"
+  },
+  "keywords": [
+    "React",
+    "State",
+    "useState",
+    "OpenState",
+    "openstate"
+  ],
+  "author": "next_mouse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NextMouse/OpenState/issues"
+  },
+  "homepage": "https://github.com/NextMouse/OpenState#readme"
+}
