@@ -21,6 +21,7 @@
   ],
   "files": [
     "lib",
+    "index.js",
     "license",
     "readme.md"
   ],
