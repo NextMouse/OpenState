@@ -123,5 +123,3 @@ store3.useOpenState()
 store3.callState()
 
 ```
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NextMouse&hide_progress=true)
