@@ -1,8 +1,6 @@
-# react-openstate
+# react-openstate  ![License](https://img.shields.io/badge/license-MIT-yellow) ![React](https://img.shields.io/badge/React->=16.8.0-red) ![TypeScript](https://img.shields.io/badge/TypeScript->=3.2.0-blue)
 
-一个React对象通信工具类
-
-![Visitor Count](https://profile-counter.glitch.me/NextMouse/count.svg)
+一个React对象通信工具类，使用简单Get/Set方式解决React状态管理。
 
 ## 安装方法
 
@@ -123,3 +121,5 @@ store3.useOpenState()
 store3.callState()
 
 ```
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NextMouse&hide_progress=true)
