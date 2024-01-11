@@ -1,7 +1,7 @@
 {
   "name": "react-openstate",
-  "version": "1.0.0",
-  "description": "React Object Communication Tool",
+  "version": "0.1.1",
+  "description": "React State Communication Tool",
   "author": "_store",
   "license": "MIT",
   "main": "lib/Store.js",
@@ -22,6 +22,7 @@
   "files": [
     "lib",
     "index.js",
+    "Store.ts",
     "license",
     "readme.md"
   ],
