@@ -1,7 +1,7 @@
 {
   "name": "react-openstate",
   "version": "0.1.2",
-  "description": "A Simple React State Communication Plugin",
+  "description": "A Simple React State Communication Tool",
   "author": "_store",
   "license": "MIT",
   "main": "lib/Store.js",
