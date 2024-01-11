@@ -27,6 +27,8 @@ useOpenState = <S>(initialState: S | (() => S), name: string): [S, Dispatch<SetS
 - 参数2：当前字段对外暴露的ID名称，要求在同一Store下保持唯一。(*见下多模块*)
 - 返回值：变量及Set方法组成的数组
 
+#### 示例
+
 ```JavaScript
 import { useOpenState } from "react-openstate";
 
@@ -60,6 +62,8 @@ callState = <S>(name: string): Function
 
 - 参数1：已经对外暴露的字段ID名称
 - 返回值：该字段set方法的执行器
+
+#### 示例
 
 ```JavaScript
 import { callState } from "react-openstate";
@@ -108,7 +112,9 @@ export const useOpenState = store.useOpenState;
 export const callState = store.callState;
 ```
 
-- 多Stroe使用不同namespace隔离
+### 3. 多Stroe使用不同namespace隔离
+
+#### 示例
 
 ```JavaScript
 const store1 = new Store("store1");
