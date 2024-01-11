@@ -28,7 +28,7 @@ jobs:
       - run: mkdir staging && mv react-openstate-**.tgz staging
       - name: Set Release version env variable
         run: |
-          echo "RELEASE_VERSION=${{ format('v{0}', JSON.parse(fs.readFileSync('./package.json')).version) }}" >> $GITHUB_ENV
+          echo "RELEASE_VERSION=$(cat package.json | jq -r '.version')" >> $GITHUB_ENV
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
