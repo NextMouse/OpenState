@@ -24,7 +24,10 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-      - run: npm pack
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
       - run: mkdir staging && mv react-openstate-**.tgz staging
       - name: Set Release version env variable
         run: |
