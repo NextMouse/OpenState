@@ -25,6 +25,8 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
   release:
+      #	配置权限
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
